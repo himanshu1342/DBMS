@@ -13,3 +13,4 @@ INSERT INTO employees VALUES (5, 'David Lee', 'david.lee@example.com');
 RENAME employees TO HR_Faculty;
 ALTER TABLE HR_Faculty RENAME COLUMN employee_name TO full_name;
 ALTER TABLE HR_Faculty MODIFY contact_info VARCHAR2(300);
+select * from HR_Faculty;
