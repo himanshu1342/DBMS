@@ -18,12 +18,12 @@ select * from customer where cust_city='Mumbai';
 select cust_id from customer where cust_city='Pune';
 select * from customer where wallet_amt + paid_amt>5000;
 
-select wallet_amt - paid_amt from customer ;
+select (wallet_amt - paid_amt)as bal_amt from customer ;
 update customer set wallet_amt=wallet_amt+(0.1 * wallet_amt);
 select * from customer where outstanding_amt<3000;
 select * from customer where outstanding_amt>5000;
 update customer set paid_amt=paid_amt-(0.05 * paid_amt);
-select paid_amt + outstanding_amt from customer;
+select (paid_amt + outstanding_amt)as bill_amt from customer;
 select cust_name from customer where cust_city='Hydrabad';
 delete from customer where cust_city='Hydrabad';
 
