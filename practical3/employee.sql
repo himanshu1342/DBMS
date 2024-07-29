@@ -59,5 +59,9 @@ where designation ='manager' or designation='Manager';
 SELECT * From employees 
 		where designation ='intern' or designation= 'Intern';
 
-
+Select abs(salary) from employees;
+Select mod(salary) from employees;
+Select round(salary) from employees;
+Select ceil(salary) from employees;
+Select floor(salary) from employees;
 
