@@ -54,3 +54,5 @@ SET name = LOWER(name);
 UPDATE employee1
 SET name = INITCAP(name);
 
+UPDATE employee
+SET email = SUBSTR(email, 1, INSTR(email, '@') - 1);
